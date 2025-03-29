@@ -49,9 +49,9 @@ function Navbar() {
         </li>
         <li
           className="font-medium hover:text-white hover:bg-red-600 px-3 py-1 rounded-full cursor-pointer"
-          onClick={() => { navigate("/contact"); setMenuOpen(false); }}
+          onClick={() => { navigate("/notifications"); setMenuOpen(false); }}
         >
-          Contact Us
+          Notifications
         </li>
         {isUserLoggedin ? (
           <li
