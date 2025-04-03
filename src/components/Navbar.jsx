@@ -49,7 +49,7 @@ function Navbar() {
         </li>
         <li
           className="font-medium hover:text-white hover:bg-red-600 px-3 py-1 rounded-full cursor-pointer"
-          onClick={() => { navigate("/notifications"); setMenuOpen(false); }}
+          onClick={() => { navigate("/notifications/1"); setMenuOpen(false); }}
         >
           Notifications
         </li>
