@@ -42,6 +42,10 @@ function LoginPage() {
             <FaLock />
             <input type="password" placeholder="Password" className="bg-transparent w-full outline-none font-semibold" />
           </div>
+          <button className="bg-red-500 font-medium w-full py-3 rounded-full text-white flex justify-center items-center gap-2">
+            {/* <FaGoogle className="text-white" /> */}
+            <p>Login</p>
+          </button>
         </div>
 
         {/* OR Separator */}

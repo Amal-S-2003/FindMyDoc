@@ -12,6 +12,7 @@ import AppointmentSuccess from "./pages/AppointmentSuccess";
 import Notifications from "./pages/Notifications";
 import DoctorLogin from "./pages/DocterLogin";
 import DocterRegister from "./pages/DocterRegister";
+import DocterProfile from "./pages/DocterProfile";
 
 function App() {
   const location = useLocation(); // Get the current route
@@ -37,6 +38,7 @@ function App() {
         <Route path="/docter">
         <Route path="login" element={<DoctorLogin/>}/>
         <Route path="register" element={<DocterRegister/>}/>
+        <Route path="profile/:doctorId" element={<DocterProfile/>}/>
 
         </Route>
       </Routes>

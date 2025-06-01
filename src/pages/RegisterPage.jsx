@@ -3,6 +3,7 @@ import { FaLock, FaUser } from "react-icons/fa";
 import { MdEmail, MdFacebook } from "react-icons/md";
 import { FaPhone, FaGoogle } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import { UserCircle } from "lucide-react";
 
 function RegisterPage() {
   const navigate = useNavigate();
@@ -50,6 +51,10 @@ function RegisterPage() {
             <FaLock />
             <input type="password" placeholder="Password" className="bg-transparent w-full outline-none font-semibold" />
           </div>
+          <button className="bg-red-500 font-medium w-full py-3 rounded-full text-white flex justify-center items-center gap-2">
+                      {/* <UserCircle className="text-white" /> */}
+                      <p>Register</p>
+                    </button>
         </div>
 
         {/* OR Separator */}

@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { FaUserMd, FaLock, FaEye, FaEyeSlash } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function DoctorLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-
+const navigate=useNavigate();
   const togglePassword = () => {
     setShowPassword(!showPassword);
   };
@@ -16,7 +17,7 @@ function DoctorLogin() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
       <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
         {/* Header */}
         <h2 className="text-2xl font-bold text-center text-red-600 flex items-center justify-center gap-2">
@@ -66,6 +67,13 @@ function DoctorLogin() {
           </button>
         </form>
       </div>
+              {/* Register Redirect */}
+              <p className="mt-4 text-center">
+          New here?{" "}
+          <span className="text-red-500 underline font-semibold cursor-pointer" onClick={() => navigate("/docter/register")}>
+            Register
+          </span>
+        </p>
     </div>
   );
 }

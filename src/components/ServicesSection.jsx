@@ -7,7 +7,7 @@ const services = [
   { icon: <FaStar className="text-red-600 text-4xl" />, title: "Rate and Review Doctors", description: "Share your experience and help others by rating and reviewing doctors." },
   { icon: <FaSearchLocation className="text-red-600 text-4xl" />, title: "Search Nearby Doctors", description: "Locate doctors near you quickly with our powerful search tool." },
   { icon: <FaCalendarCheck className="text-red-600 text-4xl" />, title: "Schedule Appointments", description: "Book appointments with ease and manage your schedule hassle-free." },
-  { icon: <FaFilter className="text-red-600 text-4xl" />, title: "Filter by Category", description: "Find doctors based on their specialization and expertise." },
+  // { icon: <FaFilter className="text-red-600 text-4xl" />, title: "Filter by Category", description: "Find doctors based on their specialization and expertise." },
   { icon: <FaBell className="text-red-600 text-4xl" />, title: "Notifications & Alerts", description: "Get reminders and updates about your upcoming appointments." },
   { icon: <FaHistory className="text-red-600 text-4xl" />, title: "Appointment & Treatment History", description: "Access your past appointments and treatment records anytime." },
 ];
